@@ -1,19 +1,24 @@
-# thomas-evers.me content
+# Thomas Evers — website and résumé
 
-This repository controls the text shown on [thomas-evers.me](https://thomas-evers.me).
+This is the single source of truth for [thomas-evers.me](https://thomas-evers.me) and the PDF résumé.
 
-## How to edit the website
+## Edit your content
 
-Open a file below, click the pencil icon, edit the text, and press **Commit changes**. The live website reads these files directly, so changes normally appear after a refresh within a minute.
+Use GitHub's pencil button to edit one of these files and commit the change:
 
-- [About me](about.md)
-- [Name, introduction, and contact links](profile.json)
-- [Resume](resume.json)
-- [Skills](skills.json)
-- [Research](research.json)
+- [`about.md`](about.md) — About me
+- [`profile.json`](profile.json) — name, introduction, links, and PDF link
+- [`resume.json`](resume.json) — education and experience
+- [`skills.json`](skills.json) — skills
+- [`research.json`](research.json) — papers and research
 
-JSON files must keep their quotes, commas, square brackets, and curly brackets. Edit the text between quotes.
+Website changes appear after a refresh, usually within a minute. Changes to résumé, profile, skills, or research data also trigger GitHub Actions, which regenerates `resume.tex`, builds `resume.pdf`, and publishes it as the repository's latest release.
 
-## Existing resume repository
+## PDF and LaTeX
 
-The original LaTeX résumé remains in [Thomasevers2517/resume](https://github.com/Thomasevers2517/resume). This repository is the website-friendly content layer derived from it. Update this repository for the website; update the resume repository for the PDF/LaTeX résumé.
+- [Download the latest generated PDF](https://github.com/Thomasevers2517/thomas-evers-site-content/releases/latest/download/resume.pdf)
+- [`resume.tex`](resume.tex) is generated; do not edit it directly.
+- [`scripts/generate_resume.py`](scripts/generate_resume.py) controls the LaTeX layout.
+- [Build history](../../actions/workflows/build-resume.yml)
+
+JSON punctuation matters. Edit the text between quotes and keep the surrounding quotes, commas, brackets, and braces.
