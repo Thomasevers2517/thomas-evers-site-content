@@ -1,0 +1,32 @@
+[
+  {
+    "period": "2023–2026",
+    "title": "M.Sc. Signal Processing Systems",
+    "organization": "Delft University of Technology",
+    "description": "Thesis in model-based reinforcement learning, graded 9.5/10."
+  },
+  {
+    "period": "2023–2024",
+    "title": "Founder",
+    "organization": "Enthusiastech",
+    "description": "Built control, computer vision, optimization, and embedded systems for robotics and sensing applications."
+  },
+  {
+    "period": "2021–2022",
+    "title": "Chief Electrical Engineer",
+    "organization": "Da Vinci Satellite Team, TU Delft",
+    "description": "Led six electrical engineers in the design and testing of nanosatellite electronics."
+  },
+  {
+    "period": "2018–2021",
+    "title": "Founder",
+    "organization": "The Smart Make",
+    "description": "Developed an educational hardware and software platform used by more than 100 students."
+  },
+  {
+    "period": "2020–2023",
+    "title": "B.Sc. Electrical Engineering",
+    "organization": "Delft University of Technology",
+    "description": "Electrical engineering, signal processing, embedded systems, and computing."
+  }
+]
