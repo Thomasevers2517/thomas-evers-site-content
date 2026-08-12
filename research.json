@@ -1,0 +1,11 @@
+[
+  {
+    "slug": "efficienttdmpc",
+    "title": "EfficientTDMPC",
+    "meta": "M.Sc. thesis · 2026",
+    "description": "Improved MPC objectives for sample-efficient continuous control. The work improved the sample efficiency of state-of-the-art methods by approximately 2× on robotics benchmarks including HumanoidBench and the DeepMind Control Suite.",
+    "note": "Submitted to NeurIPS 2026.",
+    "htmlPath": "/research/efficienttdmpc",
+    "pdfUrl": "https://arxiv.org/pdf/2605.16692"
+  }
+]
