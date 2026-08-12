@@ -3,30 +3,46 @@
     "period": "2023–2026",
     "title": "M.Sc. Electrical Enginerring",
     "organization": "Delft University of Technology",
-    "description": "Thesis in model-based reinforcement learning, graded 9.5/10."
+    "description": "Thesis in model-based reinforcement learning, graded 9.5/10.",
+    "details": [
+      "Completed a thesis in model-based reinforcement learning, graded 9.5/10.",
+      "Developed EfficientTDMPC, improving sample efficiency by approximately 2× on continuous-control robotics benchmarks."
+    ]
   },
   {
     "period": "2023–2024",
     "title": "Founder",
     "organization": "Enthusiastech",
-    "description": "Built control, computer vision, optimization, and embedded systems for robotics and sensing applications."
+    "description": "Built control, computer vision, optimization, and embedded systems for robotics and sensing applications.",
+    "details": [
+      "Developed control, computer vision, optimization, and embedded systems for robotics and sensing applications."
+    ]
   },
   {
     "period": "2021–2022",
     "title": "Chief Electrical Engineer",
     "organization": "Da Vinci Satellite Team, TU Delft",
-    "description": "Led six electrical engineers in the design and testing of nanosatellite electronics."
+    "description": "Led six electrical engineers in the design and testing of nanosatellite electronics.",
+    "details": [
+      "Led a team of six electrical engineers designing and testing nanosatellite electronics."
+    ]
   },
   {
     "period": "2018–2021",
     "title": "Founder",
     "organization": "The Smart Make",
-    "description": "Developed a robotics education platform consisting of hardware and software used by more than 100 students."
+    "description": "Developed a robotics education platform consisting of hardware and software used by more than 100 students.",
+    "details": [
+      "Developed a robotics education platform consisting of hardware and software used by more than 100 students."
+    ]
   },
   {
     "period": "2020–2023",
     "title": "B.Sc. Electrical Engineering",
     "organization": "Delft University of Technology",
-    "description": "Electrical engineering, signal processing, embedded systems, and computing."
+    "description": "Electrical engineering, signal processing, embedded systems, and computing.",
+    "details": [
+      "Focused on electrical engineering, signal processing, embedded systems, and computing."
+    ]
   }
 ]
