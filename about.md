@@ -1,3 +1,1 @@
-I am based in Delft, the Netherlands. I started building electronics and small businesses at a young age, then moved through electrical engineering and signal processing into machine learning and reinforcement learning.
-
-I enjoy difficult technical problems that cross boundaries: research that has to become reliable code, algorithms that interact with hardware, and systems that need both careful theory and practical engineering.
+I am lucky enough to see life as the great adventure that it is. My thinking is that the greatest way to experience this adventure is to work hard toward cool goals with great people that want the best for each other and the world. I currently do this in the form of research in machine learning and physical intelligence. It may be the greatest puzzle humanity will ever solve and I am very happy I get to be a small part of it.
