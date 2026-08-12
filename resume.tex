@@ -1,0 +1,54 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.35cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\definecolor{accent}{HTML}{1E4D73}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{-0.45em}\rule{\linewidth}{0.35pt}]
+\titlespacing*{\section}{0pt}{0.8em}{0.45em}
+\newcommand{\entry}[4]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr}
+    \textbf{#2} & \textit{#1}\\
+    \textit{#3} &
+  \end{tabular*}
+  \vspace{-0.7em}
+  \begin{itemize}[leftmargin=1.25em,itemsep=0.05em,topsep=0.25em]
+    #4
+  \end{itemize}
+}
+\newcommand{\skill}[2]{\textbf{#1}: #2\\[0.2em]}
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries Thomas Evers}\\[0.35em]
+  thomasevers9@gmail.com $\cdot$
+  \href{https://github.com/Thomasevers2517}{GitHub} $\cdot$
+  \href{https://nl.linkedin.com/in/thomas-evers-40b255185/en}{LinkedIn} $\cdot$
+  \href{https://thomas-evers.me}{thomas-evers.me}
+\end{center}
+
+\vspace{-0.4em}
+Electrical engineer and machine learning researcher working on reinforcement learning, robotics, and systems that connect software with the physical world.
+
+\section{Research}
+\entry{M.Sc. thesis · 2026}{EfficientTDMPC}{Research}{\item Improved MPC objectives for sample-efficient continuous control. The work improved the sample efficiency of state-of-the-art methods by approximately 2$\times$ on robotics benchmarks including HumanoidBench and the DeepMind Control Suite. \item Submitted to NeurIPS 2026.}
+
+\section{Education and Experience}
+\entry{2023--2026}{M.Sc. Signal Processing Systems}{Delft University of Technology}{\item Completed a thesis in model-based reinforcement learning, graded 9.5/10.
+\item Developed EfficientTDMPC, improving sample efficiency by approximately 2$\times$ on continuous-control robotics benchmarks.}
+\entry{2023--2024}{Founder}{Enthusiastech}{\item Developed control, computer vision, optimization, and embedded systems for robotics and sensing applications.}
+\entry{2021--2022}{Chief Electrical Engineer}{Da Vinci Satellite Team, TU Delft}{\item Led a team of six electrical engineers designing and testing nanosatellite electronics.}
+\entry{2018--2021}{Founder}{The Smart Make}{\item Designed an educational hardware and software platform used by more than 100 students.}
+\entry{2020--2023}{B.Sc. Electrical Engineering}{Delft University of Technology}{\item Focused on electrical engineering, signal processing, embedded systems, and computing.}
+
+\section{Skills}
+\skill{Programming}{Python, C++, CUDA, PyTorch, VHDL, Node.js}
+\skill{Machine learning}{Reinforcement learning, model-based RL, optimization, computer vision, transformers}
+\skill{Hardware}{Electrical engineering, embedded systems, FPGA, PCB design, robotics, sensor systems}
+\skill{Tools}{Git, Docker, Linux, LaTeX, Nsight Systems, Nsight Compute, SURF / Snellius}
+
+\end{document}
