@@ -1,0 +1,46 @@
+name: Build resume PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - profile.json
+      - resume.json
+      - skills.json
+      - research.json
+      - scripts/generate_resume.py
+      - .github/workflows/build-resume.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate LaTeX
+        run: python scripts/generate_resume.py
+      - name: Install LaTeX
+        run: sudo apt-get update && sudo apt-get install -y latexmk texlive-latex-extra texlive-fonts-recommended lmodern
+      - name: Build PDF
+        run: mkdir -p build && latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build resume.tex
+      - name: Keep generated LaTeX in sync
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add resume.tex
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: regenerate resume"
+            git push
+          fi
+      - name: Publish latest PDF
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view latest-resume >/dev/null 2>&1; then
+            gh release upload latest-resume build/resume.pdf --clobber
+          else
+            gh release create latest-resume build/resume.pdf --title "Latest resume" --notes "Automatically generated from the career data in this repository." --latest
+          fi
