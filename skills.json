@@ -1,18 +1,18 @@
 [
   {
     "title": "Programming",
-    "description": "Python, C++, CUDA, PyTorch, VHDL, Node.js"
+    "description": "Python, C++, CUDA, PyTorch"
   },
   {
     "title": "Machine learning",
-    "description": "Reinforcement learning, model-based RL, optimization, computer vision, transformers"
+    "description": "Reinforcement learning, VLA and world models, representation learning, model-based control, continuous control, computer vision"
   },
   {
     "title": "Hardware",
-    "description": "Electrical engineering, embedded systems, FPGA, PCB design, robotics, sensor systems"
+    "description": "GPU architecture"
   },
   {
     "title": "Tools",
-    "description": "Git, Docker, Linux, LaTeX, Nsight Systems, Nsight Compute, SURF / Snellius"
+    "description": "Git, Docker, Linux, LaTeX, MuJoCo, Nsight Systems, Nsight Compute, Slurm, SURF / Snellius"
   }
 ]
